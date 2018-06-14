@@ -1,0 +1,10 @@
+name: 'Santander I18N'
+type: module
+description: 'Santander internationalisation'
+core: 8.x
+package: 'Santander'
+version: 8.x-1.0
+dependencies:
+  - language
+  - locale
+  - config_translation

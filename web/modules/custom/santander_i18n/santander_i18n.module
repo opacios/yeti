@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains santander_i18n.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function santander_i18n_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the santander_i18n module.
+    case 'help.page.santander_i18n':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Santander internationalisation') . '</p>';
+      return $output;
+
+    default:
+  }
+}
