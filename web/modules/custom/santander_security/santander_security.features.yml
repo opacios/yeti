@@ -1,0 +1,16 @@
+bundle: santander
+excluded:
+  - security_review.check.security_review-admin_permissions
+  - security_review.check.security_review-error_reporting
+  - security_review.check.security_review-executable_php
+  - security_review.check.security_review-failed_logins
+  - security_review.check.security_review-field
+  - security_review.check.security_review-file_perms
+  - security_review.check.security_review-input_formats
+  - security_review.check.security_review-private_files
+  - security_review.check.security_review-query_errors
+  - security_review.check.security_review-temporary_files
+  - security_review.check.security_review-trusted_hosts
+  - security_review.check.security_review-upload_extensions
+  - security_review.check.security_review-views_access
+required: true

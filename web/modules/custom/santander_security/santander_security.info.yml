@@ -1,0 +1,19 @@
+name: 'Santander Security'
+type: module
+description: 'Santander security'
+core: 8.x
+package: Santander
+version: 8.x-1.0
+dependencies:
+  - autologout
+  - config_update
+  - honeypot
+  - password_policy_character_types
+  - password_policy_characters
+  - password_policy_consecutive
+  - password_policy_length
+  - password_policy_username
+  - seckit
+  - security_review
+  - simplelogin
+  - username_enumeration_prevention

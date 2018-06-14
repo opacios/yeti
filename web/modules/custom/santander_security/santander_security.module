@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains santander_security.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function santander_security_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the santander_security module.
+    case 'help.page.santander_security':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Santander Security') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_preprocess_html() for page--simplelogin.tpl.php.
+ *
+ * {@inheritdoc}
+ */
+function santander_security_preprocess_html(&$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  $current_user = \Drupal::currentUser();  // Whether the current user is anonymous or authenticated
+  if (!$current_user->id() && strpos($path, '/tfa/') !== FALSE) {
+    $variables['attributes']['class'][] = 'simplelogin';
+    $background_opacity = simple_login_settings('opacity');
+    if($background_opacity) {
+      $variables['attributes']['class'][] = 'opacity';
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_alter
+ *
+ * {@inheritdoc}
+ */
+function santander_security_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if ($hook == 'page') {
+    $path = \Drupal::service('path.current')->getPath();
+    $current_user = \Drupal::currentUser();  // Whether the current user is anonymous or authenticated
+    if (!$current_user->id() && strpos($path, '/tfa/') !== FALSE) {
+      $suggestions[] = 'page__simplelogin';
+    }
+  }
+}
