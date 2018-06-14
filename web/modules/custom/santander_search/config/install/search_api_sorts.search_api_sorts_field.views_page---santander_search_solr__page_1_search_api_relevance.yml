@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: views_page---santander_search_solr__page_1_search_api_relevance
+display_id: views_page---santander_search_solr__page_1
+field_identifier: search_api_relevance
+default_sort: true
+default_order: desc
+label: Relevance
+weight: 0

@@ -1,0 +1,13 @@
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: views_page---santander_search_solr__page_1_field_tags
+display_id: views_page---santander_search_solr__page_1
+field_identifier: field_tags
+default_sort: false
+default_order: asc
+label: Tags
+weight: 0

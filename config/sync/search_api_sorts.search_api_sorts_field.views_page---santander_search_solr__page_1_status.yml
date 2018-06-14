@@ -1,0 +1,16 @@
+uuid: 273729cc-2a50-4d19-b3d8-5d6250888611
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: UB5wK4kJ5tHl98jvpK_KMG0RbyO5oNLamQTgW8f1hmk
+id: views_page---santander_search_solr__page_1_status
+display_id: views_page---santander_search_solr__page_1
+field_identifier: status
+default_sort: false
+default_order: asc
+label: 'Publishing status'
+weight: 0

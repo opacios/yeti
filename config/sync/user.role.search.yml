@@ -1,0 +1,44 @@
+uuid: f19da966-f54e-4c1d-aecf-cb4fd799399d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: 6PS4ViS5ebPKS6ji4CKnhmpkkItHgOb99ph3bHQT2ws
+id: search
+label: Search
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer search api exclude entity'
+  - 'administer search api synonym configuration'
+  - 'administer search api synonyms'
+  - 'administer search_api_attachments'
+  - 'create field_best_bets'
+  - 'create field_exclude_entity'
+  - 'create field_synonym'
+  - 'edit field_best_bets'
+  - 'edit field_exclude_entity'
+  - 'edit field_synonym'
+  - 'edit own field_best_bets'
+  - 'edit own field_exclude_entity'
+  - 'edit own field_synonym'
+  - 'import search api synonyms'
+  - 'simple_analytics view_details'
+  - 'simple_analytics view_history'
+  - 'simple_analytics view_live'
+  - 'view all media revisions'
+  - 'view cron jobs'
+  - 'view field_best_bets'
+  - 'view field_exclude_entity'
+  - 'view field_synonym'
+  - 'view own field_best_bets'
+  - 'view own field_exclude_entity'
+  - 'view own field_synonym'
+  - 'view own login history'
+  - 'view the administration theme'

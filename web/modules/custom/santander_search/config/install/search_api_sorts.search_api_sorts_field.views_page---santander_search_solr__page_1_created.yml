@@ -1,0 +1,13 @@
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: views_page---santander_search_solr__page_1_created
+display_id: views_page---santander_search_solr__page_1
+field_identifier: created
+default_sort: false
+default_order: asc
+label: 'Authored on'
+weight: 0

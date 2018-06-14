@@ -1,0 +1,16 @@
+uuid: 6f7a9b8f-56ef-48dd-9bdb-b8213ea68ebf
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: uhifjlD2_v-NFpd1bO5htuZBsL9Sz6wMc_4jo4wG30E
+id: views_page---santander_search_solr__page_1_author
+display_id: views_page---santander_search_solr__page_1
+field_identifier: author
+default_sort: false
+default_order: asc
+label: 'Author name'
+weight: 0

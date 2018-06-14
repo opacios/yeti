@@ -1,0 +1,37 @@
+uuid: c29b38c5-a88a-4f23-bafd-423c87275cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
+    - search_api_solr.solr_field_type.text_und_7_0_0
+  enforced:
+    module:
+      - santander_search
+  module:
+    - search_api_solr
+_core:
+  default_config_hash: i85eMd3cMOOynVvpfFD9yYy1y5caw1t7gZT59CTzxKg
+id: default_solr_server
+name: 'Solr Server'
+description: 'Default Solr server created by the Solr Search Defaults module'
+backend: search_api_solr
+backend_config:
+  connector: standard
+  connector_config:
+    scheme: http
+    host: localhost
+    port: '8983'
+    path: /solr
+    core: web18
+    timeout: 5
+    index_timeout: 10
+    optimize_timeout: 15
+    commit_within: 1000
+    solr_version: ''
+    http_method: AUTO
+  retrieve_data: true
+  highlight_data: true
+  skip_schema_check: false
+  domain: generic
+  site_hash: true

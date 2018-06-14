@@ -1,0 +1,14 @@
+uuid: 8d8b0448-4bcc-4281-923f-53f8448fe4a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.search
+  module:
+    - user
+id: user_remove_role_action.search
+label: 'Remove the Search role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: search

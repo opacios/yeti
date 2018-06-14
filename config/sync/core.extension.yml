@@ -4,6 +4,7 @@ module:
   admin_toolbar_tools: 0
   autologout: 0
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -23,7 +24,9 @@ module:
   dynamic_page_cache: 0
   editor: 0
   environment_indicator: 0
+  facets: 0
   field: 0
+  field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -53,22 +56,38 @@ module:
   rdf: 0
   replication: 0
   santander_i18n: 0
+  santander_search: 0
   santander_security: 0
   search: 0
+  search404: 0
+  search_api: 0
+  search_api_attachments: 0
+  search_api_autocomplete: 0
+  search_api_best_bets: 0
+  search_api_exclude: 0
+  search_api_exclude_entity: 0
+  search_api_glossary: 0
+  search_api_solr: 0
+  search_api_sort_priority: 0
+  search_api_sorts: 0
+  search_api_synonym: 0
   seckit: 0
   security_review: 0
   serialization: 0
   shortcut: 0
   simplelogin: 0
+  snowball_stemmer: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
   tour: 0
   trash: 0
+  ultimate_cron: 0
   update: 0
   user: 0
   username_enumeration_prevention: 0
+  views_conditional: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

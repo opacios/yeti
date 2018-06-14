@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: views_page---santander_search_solr__page_1_type
+display_id: views_page---santander_search_solr__page_1
+field_identifier: type
+default_sort: false
+default_order: asc
+label: 'Content type'
+weight: 0

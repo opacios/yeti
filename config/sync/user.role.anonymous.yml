@@ -13,4 +13,5 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
+  - 'use search_api_autocomplete for santander_search_solr'
   - 'use text format restricted_html'

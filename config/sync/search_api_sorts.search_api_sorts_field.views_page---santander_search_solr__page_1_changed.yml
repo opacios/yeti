@@ -1,0 +1,16 @@
+uuid: 87b57603-ab2c-46f0-88bc-42f12c2d0cca
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: nWEXsSFS5lETp0_a2VT0Kk9d-3EEqTlo9kwqP7S5jj8
+id: views_page---santander_search_solr__page_1_changed
+display_id: views_page---santander_search_solr__page_1
+field_identifier: changed
+default_sort: false
+default_order: desc
+label: Changed
+weight: 0

@@ -1,0 +1,16 @@
+uuid: 7a6081ec-3238-4ae6-b7fa-b19c387cbcc2
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: esf7aEfgKjJM4SEyScksD48Nv_DR5h0A2tgXnQP-db4
+id: views_page---santander_search_solr__page_1_sticky
+display_id: views_page---santander_search_solr__page_1
+field_identifier: sticky
+default_sort: false
+default_order: asc
+label: 'Sticky at top of lists'
+weight: 0

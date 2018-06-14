@@ -1,0 +1,14 @@
+uuid: 9ac4637d-bce3-4c54-8fee-be1b4b6e9749
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.search
+  module:
+    - user
+id: user_add_role_action.search
+label: 'Add the Search role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: search

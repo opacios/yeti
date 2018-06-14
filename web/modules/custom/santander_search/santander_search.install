@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update for santander_search module.
+ */
+
+use Drupal\user\RoleInterface;
+
+function santander_search_install() {
+  //configure search404 redirect
+  \Drupal::configFactory()->getEditable('search404.settings')
+    ->set('search404_do_custom_search', true)
+    ->set('search404_custom_search_path', 'search?keys=@keys')
+    ->save();
+
+  //set document extractor
+  \Drupal::configFactory()->getEditable('search_api_attachments.admin_config')
+    ->set('extraction_method', 'solr_extractor')
+    ->set('solr_extractor_configuration.solr_server', 'default_solr_server')
+    ->save();
+
+  // Allow all users to use search autocomplete.
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['use search_api_autocomplete for santander_search_solr']);
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['use search_api_autocomplete for santander_search_solr']);
+
+  //Permissions for search agent
+  $search_permissions = [
+    'access content overview',
+    'access files overview',
+    'access toolbar',
+    'administer search api exclude entity',
+    'administer search api synonym configuration',
+    'administer search api synonyms',
+    'administer search_api_attachments',
+    'create field_best_bets',
+    'create field_exclude_entity',
+    'create field_synonym',
+    'edit field_best_bets',
+    'edit field_exclude_entity',
+    'edit field_synonym',
+    'edit own field_best_bets',
+    'edit own field_exclude_entity',
+    'edit own field_synonym',
+    'import search api synonyms',
+    'simple_analytics view_details',
+    'simple_analytics view_history',
+    'simple_analytics view_live',
+    'view cron jobs',
+    'view field_best_bets',
+    'view field_exclude_entity',
+    'view field_synonym',
+    'view own field_best_bets',
+    'view own field_exclude_entity',
+    'view own field_synonym',
+    'view own login history',
+    'view the administration theme',
+    'view all media revisions'
+  ];
+  user_role_grant_permissions('search', $search_permissions);
+
+}

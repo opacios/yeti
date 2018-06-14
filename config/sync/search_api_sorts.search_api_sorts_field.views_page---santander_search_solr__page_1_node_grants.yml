@@ -1,0 +1,16 @@
+uuid: 0cac67fd-af60-4c9b-82ca-b89f5ad67ede
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: V1nWs2M5F-jl2VEUPQsRKTWuY2aXcsxNmSvn_8ziLEU
+id: views_page---santander_search_solr__page_1_node_grants
+display_id: views_page---santander_search_solr__page_1
+field_identifier: node_grants
+default_sort: false
+default_order: asc
+label: 'Node access information'
+weight: 0

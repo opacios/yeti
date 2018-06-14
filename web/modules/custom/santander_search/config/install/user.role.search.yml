@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: search
+label: Search
+weight: 3
+is_admin: null

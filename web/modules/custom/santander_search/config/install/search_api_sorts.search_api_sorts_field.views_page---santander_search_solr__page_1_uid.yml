@@ -1,0 +1,13 @@
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+id: views_page---santander_search_solr__page_1_uid
+display_id: views_page---santander_search_solr__page_1
+field_identifier: uid
+default_sort: false
+default_order: asc
+label: 'Author ID'
+weight: 0

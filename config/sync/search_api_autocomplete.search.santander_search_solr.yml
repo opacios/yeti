@@ -1,0 +1,57 @@
+uuid: 0aa3d878-fbf8-43af-892a-0b948c484f55
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+  config:
+    - search_api.index.default_solr_index
+    - views.view.santander_search_solr
+  module:
+    - views
+    - search_api_autocomplete
+    - search_api_solr
+_core:
+  default_config_hash: mej7aTT0kU0ohl0iB-lzqemRRRbGHeQd0lHewfhatls
+id: santander_search_solr
+label: 'Santander Solr search'
+index_id: default_solr_index
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes:
+      'entity:node':
+        article: ''
+        page: ''
+      'entity:file':
+        file: ''
+      'entity:search_api_synonym':
+        search_api_synonym: ''
+      'entity:taxonomy_term':
+        tags: ''
+  server:
+    fields: {  }
+  search_api_solr_spellcheck: {  }
+  search_api_solr_suggester:
+    search_api_solr/site_hash: 1
+    search_api/index: default_solr_index
+    drupal/langcode: any
+suggester_weights:
+  live_results: 0
+  server: 0
+  search_api_solr_spellcheck: 0
+  search_api_solr_suggester: 0
+suggester_limits: {  }
+search_settings:
+  'views:santander_search_solr':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

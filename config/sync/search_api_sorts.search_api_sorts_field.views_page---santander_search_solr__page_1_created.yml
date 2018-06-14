@@ -1,0 +1,16 @@
+uuid: 81b7e667-e19f-45ad-814f-732bf0260410
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: '-k3v0xiGET4YZzf8C0vsYqi_amu_JIcXU2vngzLlYM8'
+id: views_page---santander_search_solr__page_1_created
+display_id: views_page---santander_search_solr__page_1
+field_identifier: created
+default_sort: false
+default_order: asc
+label: 'Authored on'
+weight: 0

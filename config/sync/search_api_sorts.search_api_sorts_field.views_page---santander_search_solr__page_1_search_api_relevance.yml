@@ -1,0 +1,16 @@
+uuid: 74e12495-6df9-4d30-81d6-ed582d31df78
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - santander_search
+_core:
+  default_config_hash: aAJ4lntwo7JlFF-NKQm_0bSTwScaOkTJ-PcD6FU5lrU
+id: views_page---santander_search_solr__page_1_search_api_relevance
+display_id: views_page---santander_search_solr__page_1
+field_identifier: search_api_relevance
+default_sort: true
+default_order: desc
+label: Relevance
+weight: 0
