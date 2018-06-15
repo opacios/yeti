@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Santander Web18" default="build" basedir="." description="Build site">
+  <!-- build for deploy -->
+  <target name="build">
+    <!--<exec command="git pull" dir="." description="Fetch data from cvs repository." logoutput="true"/>-->
+    <!--<exec command="composer install &#45;&#45;no-interaction" dir="." description="Install missing composer packages." logoutput="true"/>-->
+    <exec command="../vendor/bin/drush -y config-import" dir="web" description="Import drupal configuration." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y updb" dir="web" description="Run drupal update database hooks." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y entup" dir="web" description="Run drupal entity update hooks." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y cr" dir="web" description="Rebuild the cache." logoutput="true"/>
+  </target>
+
+  <!-- sync 2 env -->
+  <target name="sync">
+    <exec command="../vendor/bin/drush -y sql-drop" dir="web" description="Drop the database." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y sql-sync @stage @self" dir="web" description="Sync database from stage." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y cr" dir="web" description="Rebuild the cache." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y cim" dir="web" description="Import drupal configuration." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y updb" dir="web" description="Run drupal update database hooks." logoutput="true"/>
+    <exec command="../vendor/bin/drush -y entup" dir="web" description="Run drupal entity update hooks." logoutput="true"/>
+  </target>
+</project>
